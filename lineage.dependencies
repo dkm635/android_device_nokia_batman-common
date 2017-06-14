@@ -1,15 +1,15 @@
 [
   {
-    "repository": "android_device_samsung_qcom-common",
-    "target_path": "device/samsung/qcom-common"
+    "repository": "android_device_nokia_qcom-common",
+    "target_path": "device/nokia/qcom-common"
   },
   {
-    "repository": "android_device_samsung_msm8930-common",
-    "target_path": "device/samsung/msm8930-common"
+    "repository": "android_device_nokia_msm8930-common",
+    "target_path": "device/nokia/msm8930-common"
   },
   {
-    "repository": "android_kernel_samsung_msm8930-common",
-    "target_path": "kernel/samsung/msm8930-common"
+    "repository": "android_kernel_nokia_msm8930-common",
+    "target_path": "kernel/nokia/msm8930-common"
   },
   {
     "repository": "android_packages_apps_FlipFlap",

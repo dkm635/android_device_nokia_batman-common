@@ -29,9 +29,9 @@ rm -rf $BASE/*
 DEVBASE=../../../vendor/$VENDOR/$DEVICE/proprietary
 rm -rf $DEVBASE/*
 
-extract ../../samsung/$DEVICE_COMMON/proprietary-files.txt $BASE
-extract ../../samsung/$DEVICE/device-proprietary-files.txt $DEVBASE
+extract ../../nokia/$DEVICE_COMMON/proprietary-files.txt $BASE
+extract ../../nokia/$DEVICE/device-proprietary-files.txt $DEVBASE
 
 
-./../../samsung//$DEVICE_COMMON/setup-makefiles.sh
-./../../samsung//$DEVICE/setup-makefiles.sh
+./../../nokia//$DEVICE_COMMON/setup-makefiles.sh
+./../../nokia//$DEVICE/setup-makefiles.sh

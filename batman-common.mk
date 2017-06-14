@@ -14,10 +14,10 @@
 # limitations under the License.
 
 # Also get non-open-source specific aspects
-$(call inherit-product, vendor/samsung/serrano-common/serrano-common-vendor.mk)
+$(call inherit-product, vendor/nokia/batman-common/batman-common-vendor.mk)
 
 # Common overlay
-DEVICE_PACKAGE_OVERLAYS += device/samsung/serrano-common/overlay
+DEVICE_PACKAGE_OVERLAYS += device/nokia/batman-common/overlay
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
@@ -58,7 +58,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/atmel_mxt_ts.kl:system/usr/keylayout/atmel_mxt_ts.kl \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
     $(LOCAL_PATH)/keylayout/philips_remote_ir.kl:system/usr/keylayout/philips_remote_ir.kl \
-    $(LOCAL_PATH)/keylayout/samsung_remote_ir.kl:system/usr/keylayout/samsung_remote_ir.kl \
+    $(LOCAL_PATH)/keylayout/nokia_remote_ir.kl:system/usr/keylayout/nokia_remote_ir.kl \
     $(LOCAL_PATH)/keylayout/sec_keys.kl:system/usr/keylayout/sec_keys.kl \
     $(LOCAL_PATH)/keylayout/sec_powerkey.kl:system/usr/keylayout/sec_powerkey.kl \
     $(LOCAL_PATH)/keylayout/sec_touchkey.kl:system/usr/keylayout/sec_touchkey.kl \
@@ -130,7 +130,7 @@ PRODUCT_PACKAGES += \
 
 # Doze
 PRODUCT_PACKAGES += \
-    SamsungDoze
+    nokiaDoze
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -144,11 +144,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FlipFlap
 
-# call common serrano system props
-$(call inherit-product, device/samsung/serrano-common/system_prop.mk)
+# call common batman system props
+$(call inherit-product, device/nokia/batman-common/system_prop.mk)
 
 # call common msm8930
-$(call inherit-product, device/samsung/msm8930-common/msm8930.mk)
+$(call inherit-product, device/nokia/msm8930-common/msm8930.mk)
 
 # call dalvik heap config
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
